@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 *.png
 L2/matrix.txt
+L2/answer.txt

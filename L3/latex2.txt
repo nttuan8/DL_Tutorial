@@ -1,0 +1,61 @@
+X = 
+\begin{bmatrix}
+ &x_1^{[1]}  &x_2^{[1]} &... &x_d^{[1]}\\ 
+ &x_1^{[2]}  &x_2^{[2]} &... &x_d^{[2]}\\ 
+ &... &... &... &... \\
+ &x_1^{[n]}  &x_2^{[n]} &... &x_d^{[n]}
+\end{bmatrix}
+=
+\begin{bmatrix} 
+ &-(x^{[1]})^T-\\
+ &-(x^{[2]})^T-\\
+ &...\\
+ &-(x^{[n]})^T-\\
+\end{bmatrix}
+
+
+Z^{(i)}= 
+\begin{bmatrix} 
+ &z^{(i)[1]}_1 &z^{(i)[1]}_2 &... &z^{(i)[1]}_{l^{(i)}} \\
+ &z^{(i)[2]}_1 &z^{(i)[2]}_2 &... &z^{(i)[2]}_{l^{(i)}} \\
+ &...\\
+ &z^{(i)[n]}_1 &z^{(i)[n]}_2 &... &z^{(i)[n]}_{l^{(i)}} \\
+\end{bmatrix}
+ = 
+\begin{bmatrix} 
+ &-(z^{(i)[1]})^T-\\
+ &-(z^{(i)[2]})^T-\\
+ &...\\
+ &-(z^{(i)[n]})^T-\\
+\end{bmatrix} 
+
+
+Z^{(1)} = 
+\begin{bmatrix} 
+ &(z^{(1)[1]})^T\\
+ &(z^{(1)[2]})^T\\
+ &...\\
+ &(z^{(1)[n]})^T\\
+\end{bmatrix}
+= \begin{bmatrix} 
+ &(x^{[1]})^T * w^{(1)} + (b^{(1)})^T\\
+ &(x^{[2]})^T * w^{(1)} + (b^{(1)})^T\\
+ &...\\
+ &(x^{[n]})^T * w^{(1)} + (b^{(1)})^T\\
+\end{bmatrix} = X * W^{(1)} + 
+\begin{bmatrix} 
+ &(b^{(1)})^T\\
+ &(b^{(1)})^T\\
+ &...\\
+ &(b^{(1)})^T\\
+\end{bmatrix}\newline \newline
+= X * W^{(1)} + b^{(1)}
+
+
+\newline \newline
+A^{(1)} = \sigma(Z^{(1)}) \newline \newline
+Z^{(2)} = A^{(1)} * W^{(2)}, A^{(2)} = \sigma({Z^{(2)}})\newline \newline
+Z^{(3)} = A^{(2)} * W^{(3)}\newline \newline
+ \hat{Y} = A^{(3)} = \sigma({Z^{(3)}})
+
+
