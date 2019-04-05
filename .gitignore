@@ -105,3 +105,7 @@ venv.bak/
 *.png
 L2/matrix.txt
 L2/answer.txt
+*.gif
+*.jpg
+*.txt
+*.jpeg
