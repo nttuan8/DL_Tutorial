@@ -109,3 +109,5 @@ L2/answer.txt
 *.jpg
 *.txt
 *.jpeg
+L8/dataset/driving_log.csv
+L8/model.py
