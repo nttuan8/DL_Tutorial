@@ -111,3 +111,7 @@ L2/answer.txt
 *.jpeg
 L8/dataset/driving_log.csv
 L8/model.py
+L9/fine_tune.py
+L9/feature-extractor.py
+L9/data_augmentation.py
+L9/data augmentation.ipynb
