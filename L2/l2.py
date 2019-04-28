@@ -20,8 +20,11 @@ x = data[:, 0:d-1].reshape(-1, d-1)
 y = data[:, 2].reshape(-1, 1)
 
 # Vẽ data bằng scatter
-plt.scatter(x[:10, 0], x[:10, 1], c='red', edgecolors='none', s=30, label='cho vay')
-plt.scatter(x[10:, 0], x[10:, 1], c='blue', edgecolors='none', s=30, label='từ chối')
+x_cho_vay = x[y[:,0]==1]
+x_tu_choi = x[y[:,0]==0]
+
+plt.scatter(x_cho_vay[:, 0], x_cho_vay[:, 1], c='red', edgecolors='none', s=30, label='cho vay')
+plt.scatter(x_tu_choi[:, 0], x_tu_choi[:, 1], c='blue', edgecolors='none', s=30, label='từ chối')
 plt.legend(loc=1)
 plt.xlabel('mức lương (triệu)')
 plt.ylabel('kinh nghiệm (năm)')
