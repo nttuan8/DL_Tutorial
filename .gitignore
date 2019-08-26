@@ -116,3 +116,6 @@ L9/feature-extractor.py
 L9/data_augmentation.py
 L9/data augmentation.ipynb
 L10/Vectorization.ipynb
+*.tif
+*.h5
+*.pkl
